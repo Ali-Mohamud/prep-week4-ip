@@ -27,3 +27,35 @@ body{
     letter-spacing: 3px;
   }
   
+
+
+  #overlay{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+  }
+  
+  #head{
+    padding-top: 10%;
+  }
+  
+  
+  nav .navbar{
+    width: 99%;
+    padding-right: 0px;
+  }
+  
+  
+  .navbar-brand{
+    margin-right: 30%;
+    font-weight:800;
+  }
+  .nav-item a{
+    
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
