@@ -71,3 +71,53 @@ $(document).ready(function(){
         $("div.choise").slideDown(1000);
       }
   
+
+      total = price + crust_price + topping_value;
+      console.log(total);
+      let checkoutTotal =0;
+      checkoutTotal = checkoutTotal + total;
+  
+      $("#pizzaname").html($(".name option:selected").val());
+      $("#pizzasize").html( $("#size option:selected").val());
+      $("#pizzacrust").html($("#crust option:selected").val());
+      $("#pizzatopping").html(ptopping.join(", "));
+      $("#totals").html(total);
+      
+  
+  
+     
+      $("button#checkout").click(function(){ 
+        $("button#checkout").hide();
+        $("button.addPizza").hide();
+        $("button.deliver").slideDown(1000);
+        $("#addedprice").slideDown(1000);
+        alert("Your total bills is sh. "+checkoutTotal);
+      });
+  
+      $("button.deliver").click(function(){
+        $(".pizzatable").hide();
+        $(".choise h2").hide();
+        $(".delivery").slideDown(1000);
+        $("#addedprice").hide();
+        $("button.deliver").hide();
+        $("#pizzatotal").hide();
+        let deliceryamount= checkoutTotal+150;
+        alert("You will pay sh. "+deliceryamount+" on delivery");
+      });
+  
+      $("button#final-order").click(function(event){
+        event.preventDefault();
+  
+        $("#pizzatotal").hide();
+        $(".delivery").hide();
+        $("button#final-order").hide();
+        let deliceryamount= checkoutTotal+150;
+        alert("Final Bill is: "+deliceryamount);
+        let person = $("input#name").val();
+        let phone = $("input#phone").val();
+        let location = $("input#location").val();
+  
+      });
+     event.preventDefault();
+    });
+  });
