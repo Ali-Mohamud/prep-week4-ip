@@ -154,3 +154,67 @@ body{
     padding: 10px;
   }
   
+
+  #about-us{
+    min-height: 70vh;
+    align-items: center;
+  
+  }
+  
+  
+  .about-pic {
+    background-color: #ffa500;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+  }
+  
+  
+  .content{
+    padding: 5em;
+    width: 100%;
+    background-color: #ffa500;
+    color: azure;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    text-align: center;
+    word-spacing: 0.3rem;
+  
+  }
+  
+
+  .d-flex{
+    display: flex !important;
+  }
+  .arrow
+  {
+    position: relative;
+    left: 50%;
+    top: 90%;
+    margin-left:-20px;
+    
+  }
+  
+  
+  
+  .order h2{
+    text-align: center;
+  }
+  #variety{
+    padding-top: 30px;
+  }
+  .order{
+    
+    color: white;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+  
+  
+  .order-overlay{
+    background-color: rgb(233, 152, 45);
+    border-radius: 1.2em;
+    padding-bottom: 20px;
+    padding-left: 6%;
+  }
